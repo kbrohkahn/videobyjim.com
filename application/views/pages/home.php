@@ -1,6 +1,6 @@
 <div class="fullscreen-video-container">
 	<video id="fullscreen-video" autoplay loop>
-		<source src="/assets/video/color_run.mp4" type="video/mp4">
+		<source src="/assets/video/color_run.mp4" poster="/assets/img/checkerboard.png" type="video/mp4">
 	</video>
 
 	<div class="video-controls">
