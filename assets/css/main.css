@@ -1,0 +1,129 @@
+/* color HEX values in XML
+<color name="brown">#AA6C39</color>
+<color name="brown_lighter">#D49A6A</color>
+<color name="brown_lightest">#FFD1AA</color>
+<color name="brown_darker">#804515</color>
+<color name="brown_darkest">#552600</color>
+
+<color name="blue">#2E4272</color>
+<color name="blue_lighter">#4F618F</color>
+<color name="blue_lightest">#7887AB</color>
+<color name="blue_darker">#162856</color>
+<color name="blue_darkest">#061539</color>
+
+<color name="green">#328A2E</color>
+<color name="green_lighter">#5AAC56</color>
+<color name="green_lightest">#8DCF8A</color>
+<color name="green_darker">#166711</color>
+<color name="green_darkest">#034500</color>
+*/
+
+html {background: white}
+body {background: linear-gradient(#b6c3e2, #fff);}
+div, ul, li, a {box-sizing: border-box;}
+img {max-width: 100%;}
+.content {max-width: 1200px;}
+
+/* Various */
+.large-margin-top {margin-top: 75px;}
+.light-background {background: #edf0f8}
+.table>tbody>tr>td {vertical-align: middle;}
+nav ul {padding-left: 0;}
+
+/* Fonts and Text Colors */
+.title {font-family:"Courier New" serif; color: #162856;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-family:"Arial Black", Gadget, sans-serif; color: #162856;}
+div,
+p,
+em,
+strong,
+#subtitle,
+a,
+a:visited,
+a:link {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+a,
+a:visited,
+a:link,
+a h4 {font-weight: bold; color: #328A2E;}
+a:hover,
+a h4:hover {color: #034500;}
+
+/* Font Styles */
+h1 {margin: 2em 0 1em;}
+p {line-height: 1.4em; margin-bottom: 1em}
+.subheader {font-size: 1.6em; margin: 1em 0;}
+
+/* Helpers */
+.center {text-align: center; margin: 0 auto;}
+.left {float: left;}
+.right {float: right;}
+.indented {text-indent: 32px;}
+.clearfix:after {display: table; content: ''; clear: both;}
+.hidden {display: none;}
+
+/* Header */
+.title {font-family: Georgia, serif;  font-style: italic;}
+#desktop-header {margin: 25px 0;}
+#desktop-header .title {font-size: 32px;}
+
+#mobile-header .title,
+#mobile-header a,
+#mobile-header a:visited,
+#mobile-header a:hover,
+#main-navbar a,
+#main-navbar a:visited,
+#main-navbar a:hover {color: #061539;}
+
+#mobile-header {display: none; width: 100%; background: #328A2E; position: absolute; top: 0; z-index: 12}
+#mobile-header .title {font-size: 24px; display: table;}
+#mobile-header .title span {display: table-cell; height: 58px; vertical-align: middle;}
+#mobile-header i {padding: 15px; position: absolute;}
+
+#main-navbar {background: #8DCF8A; margin-bottom: 1em;}
+#main-navbar ul {display: table; width: 100%; margin: 0;}
+#main-navbar ul li {display: table-cell; text-align: center;}
+#main-navbar ul li a {display: block; padding: 15px;}
+
+/* Footer */
+#footer {width: 100%; text-align: center; margin: 0 auto; padding: 3em 0 1em; position: relative}
+#footer p {font-size: .8em; margin: 0 1em 2em 0; }
+#footer ul {margin: 0 0 1em; list-style: none; padding: 0; display: inline-block; font-size: .8em;}
+#footer ul li {display: table-cell;}
+#footer ul li a {margin: 1em; text-align: center; display: block;}
+
+@media screen and (min-width: 768px) {
+	#header i {display: none;}
+	#nav ul #nav-close-item {display: none;}
+}
+
+@media screen and (max-width: 767px) {
+	/* Header */
+	#desktop-header {display: none;}
+	#mobile-header {display: block;}
+
+	#main-navbar {display: none; position: absolute; top: 58px; bottom: 0; left: -240px; width: 240px; z-index: 11;}
+	#main-navbar ul li {display: block; border-bottom: solid 1px #034500;}
+
+	#content-cover {display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(32, 32, 32, .5); z-index: 10;}
+
+	#content {margin-top: 73px;}
+
+}
+
+@media screen and (max-width: 640px) {
+}
+
+
+@media screen and (max-width: 480px) {
+	.col-xxs-6 {width: 50%;}
+	.col-xxs-12 {width: 100%;}
+	.col-xxs-offset-3 {margin-left: 25%;}
+}
+
+@media screen and (max-height: 400px) and (min-width: 400px) {
+}
