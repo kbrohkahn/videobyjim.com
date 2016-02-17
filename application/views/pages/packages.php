@@ -1,6 +1,10 @@
 <h1><?php echo $title; ?></h1>
 
 <div class="row">
+	<div class="col-xs-12">
+		<img class="center img-responsive" alt="whatever" src="http://placehold.it/1200x400">
+	</div>
+	
 	<div class="col-sm-4 center">
 		<h4>Video package 1</h4>
 		<h6>$99.00</h6>

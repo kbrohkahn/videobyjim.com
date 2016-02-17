@@ -1,25 +1,7 @@
-/* color HEX values in XML
-<color name="brown">#AA6C39</color>
-<color name="brown_lighter">#D49A6A</color>
-<color name="brown_lightest">#FFD1AA</color>
-<color name="brown_darker">#804515</color>
-<color name="brown_darkest">#552600</color>
 
-<color name="blue">#2E4272</color>
-<color name="blue_lighter">#4F618F</color>
-<color name="blue_lightest">#7887AB</color>
-<color name="blue_darker">#162856</color>
-<color name="blue_darkest">#061539</color>
-
-<color name="green">#328A2E</color>
-<color name="green_lighter">#5AAC56</color>
-<color name="green_lightest">#8DCF8A</color>
-<color name="green_darker">#166711</color>
-<color name="green_darkest">#034500</color>
-*/
 
 html {background: white}
-body {background: linear-gradient(#b6c3e2, #fff);}
+body {background: url(/assets/img/checkerboard.png);}
 div, ul, li, a {box-sizing: border-box;}
 img {max-width: 100%;}
 .content {max-width: 1200px;}
@@ -31,13 +13,13 @@ img {max-width: 100%;}
 nav ul {padding-left: 0;}
 
 /* Fonts and Text Colors */
-.title {font-family:"Courier New" serif; color: #162856;}
+.title {font-family:"Courier New" serif; color: black;}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {font-family:"Arial Black", Gadget, sans-serif; color: #162856;}
+h6 {font-family:"Arial Black", Gadget, sans-serif; color: black;}
 div,
 p,
 em,
@@ -49,9 +31,9 @@ a:link {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
 a,
 a:visited,
 a:link,
-a h4 {font-weight: bold; color: #328A2E;}
+a h4 {font-weight: bold; color: black;}
 a:hover,
-a h4:hover {color: #034500;}
+a h4:hover {color: black;}
 
 /* Font Styles */
 h1 {margin: 2em 0 1em;}
@@ -65,29 +47,25 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .indented {text-indent: 32px;}
 .clearfix:after {display: table; content: ''; clear: both;}
 .hidden {display: none;}
+.no-overflow { overflow: hidden;}
 
 /* Header */
-.title {font-family: Georgia, serif;  font-style: italic;}
-#desktop-header {margin: 25px 0;}
+a.title {font-family: Georgia, serif;  font-style: italic; }
+a.title:hover {text-decoration: none}
+#desktop-header {margin: 25px 0; position: fixed;z-index: 11;}
 #desktop-header .title {font-size: 32px;}
 
 #mobile-header .title,
 #mobile-header a,
 #mobile-header a:visited,
-#mobile-header a:hover,
-#main-navbar a,
-#main-navbar a:visited,
-#main-navbar a:hover {color: #061539;}
+#mobile-header a:hover {color: black;}
 
-#mobile-header {display: none; width: 100%; background: #328A2E; position: fixed; top: 0; z-index: 12}
-#mobile-header .title {font-size: 24px; display: table;}
-#mobile-header .title span {display: table-cell; height: 58px; vertical-align: middle;}
+#mobile-header {display: none; width: 100%; background: white; position: fixed; top: 0; z-index: 12; color: black;}
+#mobile-header .title {font-size: 24px; padding: 12px; display: table; vertical-align: middle;}
 #mobile-header i {padding: 15px; position: absolute;}
 
-#main-navbar {background: #8DCF8A; margin-bottom: 1em;}
-#main-navbar ul {display: table; width: 100%; margin: 0;}
-#main-navbar ul li {display: table-cell; text-align: center;}
-#main-navbar ul li a {display: block; padding: 15px;}
+#main-navbar {margin: 25px 0; margin-bottom: 1em;position: fixed; right: 0; z-index: 11; }
+#main-navbar a {display: table-cell; padding: 15px; text-align: center}
 
 /* Footer */
 #footer {width: 100%; text-align: center; margin: 0 auto; padding: 3em 0 1em; position: relative}
@@ -96,9 +74,18 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #footer ul li {display: table-cell;}
 #footer ul li a {margin: 1em; text-align: center; display: block;}
 
+/* Forms */
+form {max-width: 560px; margin: 0 auto;}
+
+/* Home page */
+.fullscreen {position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1; background: url("/assets/img/checkerboard.png");}
+#camera-center {position: absolute; top: 50%; left: 50%; margin-left: -100px; margin-top: -50px;}
+.fullscreen-video {position: fixed; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background: url(/assets/img/checkerboard.png) repeat;}
+
+/* Media queries */
+
 @media screen and (min-width: 768px) {
-	#header i {display: none;}
-	#nav ul #nav-close-item {display: none;}
+	#main-navbar {display: block !important;}
 }
 
 @media screen and (max-width: 767px) {
@@ -106,12 +93,14 @@ p {line-height: 1.4em; margin-bottom: 1em}
 	#desktop-header {display: none;}
 	#mobile-header {display: block;}
 
-	#main-navbar {display: none; position: fixed; top: 58px; bottom: 0; left: -240px; width: 240px; z-index: 11; margin: 0;}
-	#main-navbar ul li {display: block; border-bottom: solid 1px #034500;}
+	#main-navbar {display: none; top: 58px; bottom: 0; left: -240px; width: 240px; margin: 0;}
+	#main-navbar a {display: block; border-bottom: solid 1px black;}
 
 	#content-cover {display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(32, 32, 32, .5); z-index: 10;}
 
 	#content {margin-top: 73px;}
+
+	.fullscreen-video {display: none;}
 
 }
 

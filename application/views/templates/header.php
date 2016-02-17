@@ -16,27 +16,27 @@
 </head>
 <body>
 	<div class="content container-fluid">
+
 		<div id="desktop-header" class="center">
-			<div class="title">
+			<a class="title" href="/">
 				<img class="logo" alt="Your logo" src="http://placehold.it/50x50">
 				Videos by Jim
-			</div>
+			</a>
 		</div>
 		
 		<div class="row" id="mobile-header">
 			<a href="#main-navbar" id="mobile-menu-icon"><i class="fa fa-bars fa-2x"></i></a>
-			<div class="title center">
-				<span>Videos by Jim</span>
-			</div>
+			<a class="title center" href="/">
+				Videos by Jim
+			</a>
 		</div>
 
 		<nav id="main-navbar">
-			<ul>
-				<li><?php echo anchor('/home', 'Home');?></li>
-				<li><?php echo anchor('/videos', 'Videos');?></li>
-				<li><?php echo anchor('/packages', 'Packages');?></li>
-				<li><?php echo anchor('/about', 'About');?></li>
-				<li><?php echo anchor('/contact', 'Contact');?></li>
+			<?php echo anchor('/home', 'Home');?>
+			<?php echo anchor('/videos', 'Videos');?>
+			<?php echo anchor('/packages', 'Packages');?>
+			<?php echo anchor('/about', 'About');?>
+			<?php echo anchor('/contact', 'Contact');?>
 			</ul>
 		</nav>
 

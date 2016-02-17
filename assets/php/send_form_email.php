@@ -72,7 +72,7 @@ if(isset($_POST['email'])) {
 
 	mail($email_to, $email_subject, $email_message, $headers);
 	
-	header('Location: http://staging.broh-kahn.com/index.php/success');
+	header('Location: http://staging.broh-kahn.com/success');
 
 }
 ?>
