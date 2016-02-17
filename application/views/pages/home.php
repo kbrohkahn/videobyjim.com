@@ -8,7 +8,7 @@
 		<img src="/assets/img/icon_pause.png" id="pause-video">
 	</div>
 
-	<div id="slogan">High quality videos at your convenience.</div>
+	<div id="slogan">Professional videos at your convenience.</div>
 </div>
 
 <div class="row">

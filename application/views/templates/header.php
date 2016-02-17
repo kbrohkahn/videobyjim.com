@@ -32,12 +32,10 @@
 		</div>
 
 		<nav id="main-navbar">
-			<?php echo anchor('/home', 'Home');?>
 			<?php echo anchor('/videos', 'Videos');?>
 			<?php echo anchor('/packages', 'Packages');?>
 			<?php echo anchor('/about', 'About');?>
 			<?php echo anchor('/contact', 'Contact');?>
-			</ul>
 		</nav>
 
 		<div id="content-cover"></div>
