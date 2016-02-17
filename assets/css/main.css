@@ -79,7 +79,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 #main-navbar a:visited,
 #main-navbar a:hover {color: #061539;}
 
-#mobile-header {display: none; width: 100%; background: #328A2E; position: absolute; top: 0; z-index: 12}
+#mobile-header {display: none; width: 100%; background: #328A2E; position: fixed; top: 0; z-index: 12}
 #mobile-header .title {font-size: 24px; display: table;}
 #mobile-header .title span {display: table-cell; height: 58px; vertical-align: middle;}
 #mobile-header i {padding: 15px; position: absolute;}
@@ -106,10 +106,10 @@ p {line-height: 1.4em; margin-bottom: 1em}
 	#desktop-header {display: none;}
 	#mobile-header {display: block;}
 
-	#main-navbar {display: none; position: absolute; top: 58px; bottom: 0; left: -240px; width: 240px; z-index: 11; margin: 0;}
+	#main-navbar {display: none; position: fixed; top: 58px; bottom: 0; left: -240px; width: 240px; z-index: 11; margin: 0;}
 	#main-navbar ul li {display: block; border-bottom: solid 1px #034500;}
 
-	#content-cover {display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(32, 32, 32, .5); z-index: 10;}
+	#content-cover {display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(32, 32, 32, .5); z-index: 10;}
 
 	#content {margin-top: 73px;}
 
