@@ -17,7 +17,7 @@
 <body>
 	<div class="content container-fluid">
 
-		<div id="desktop-header" class="center">
+		<div id="desktop-header">
 			<a class="title" href="/">
 				<img class="logo" alt="Your logo" src="http://placehold.it/50x50">
 				Videos by Jim

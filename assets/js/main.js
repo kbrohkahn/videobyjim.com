@@ -11,6 +11,17 @@ $(document).ready(function() {
 	$("#content-cover").click(function() {
 		closeNavbar();
 	});
+
+	var slogan = document.getElementById("slogan")
+	var top = 1;
+	if (slogan != null) {
+		top = slogan.getBoundingClientRect().top;
+	}
+
+	$(window).scroll(function() {
+		var position = $(window).scrollTop();
+		$("#desktop-header").css("background", "rgba(233, 233, 233, " + position/top + ")");
+	});
 });
 
 function closeNavbar() {
