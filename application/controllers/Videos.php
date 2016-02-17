@@ -44,18 +44,17 @@ class Videos extends CI_Controller {
 		$this->form_validation->set_rules('link', 'Link', 'required');
 		$this->form_validation->set_rules('text', 'Text', 'required');
 
+		$this->load->view('templates/header');
 		if ($this->form_validation->run() === FALSE)
 		{
-			$this->load->view('templates/header');
 			$this->load->view('videos/create', $data);
-			$this->load->view('templates/footer');
 		}
 		else
 		{
 			$this->video_model->set_videos();
-			$this->load->view('templates/header');
 			$this->load->view('videos/success');
-			$this->load->view('templates/footer');
 		}
+		$this->load->view('templates/footer');
+
 	}
 }

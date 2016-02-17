@@ -106,7 +106,7 @@ p {line-height: 1.4em; margin-bottom: 1em}
 	#desktop-header {display: none;}
 	#mobile-header {display: block;}
 
-	#main-navbar {display: none; position: absolute; top: 58px; bottom: 0; left: -240px; width: 240px; z-index: 11;}
+	#main-navbar {display: none; position: absolute; top: 58px; bottom: 0; left: -240px; width: 240px; z-index: 11; margin: 0;}
 	#main-navbar ul li {display: block; border-bottom: solid 1px #034500;}
 
 	#content-cover {display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(32, 32, 32, .5); z-index: 10;}
