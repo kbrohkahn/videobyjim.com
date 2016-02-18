@@ -1,1 +1,0 @@
-<p>Video successfully created!</p>

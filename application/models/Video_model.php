@@ -18,7 +18,7 @@ class Video_model extends CI_Model {
 		return $query->row_array();
 	}
 
-	public function set_videos()
+	public function set_video()
 	{
 		$slug = url_title($this->input->post('title'), 'dash', TRUE);
 
@@ -30,5 +30,26 @@ class Video_model extends CI_Model {
 		);
 
 		return $this->db->insert('videos', $data);
+	}
+
+	public function delete_video($slug = FALSE)
+	{
+		if ($slug !== FALSE) {
+			$this->db->delete('videos', array('slug' => $slug));
+		}
+	}
+
+	public function update_video($slug = FALSE)
+	{
+		$new_slug = url_title($this->input->post('title'), 'dash', TRUE);
+
+		$data = array(
+			'title' => $this->input->post('title'),
+			'slug' => $new_slug,
+			'link' => $this->input->post('link'),
+			'text' => $this->input->post('text')
+		);
+
+		return $this->db->update('videos', $data, array('slug' => $slug));
 	}
 }
