@@ -1,7 +1,7 @@
 <h1><?php echo $title; ?></h1>
 
 <div class="row">
-	<div class="col-sm-4">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 		<div class="package">
 			<h4>Video package 1</h4>
 			<h6>$99.00</h6>
@@ -15,7 +15,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 		<div class="package">
 			<h4>Video package 2</h4>
 			<h6>$199.00</h6>
@@ -29,7 +29,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 		<div class="package">
 			<h4>Video package 3</h4>
 			<h6>$499.00</h6>
@@ -43,7 +43,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 		<div class="package">
 			<h4>Video package 4</h4>
 			<h6>$999.00</h6>
@@ -57,7 +57,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 		<div class="package">
 			<h4>Video package 5</h4>
 			<h6>$1499.00</h6>
@@ -71,7 +71,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 		<div class="package">
 			<h4>Video package 6</h4>
 			<h6>$1999.00</h6>

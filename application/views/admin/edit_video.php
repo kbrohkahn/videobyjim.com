@@ -13,7 +13,7 @@
 	</div>
 	<div class="form-group">
 		<label for="text">Summary</label>
-		<textarea type="text" class="form-control" name="text" required value="<?php echo $video_item['text']?>"></textarea>
+		<textarea type="text" class="form-control" name="text" required ><?php echo $video_item['text']?></textarea>
 	</div>
 
 	<button type="submit" name="submit" value="Save video item"class="btn btn-primary">Save</button>

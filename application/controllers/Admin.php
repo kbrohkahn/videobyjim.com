@@ -8,7 +8,7 @@ class Admin extends CI_Controller {
 	}
 
 	public function checkCookie() {
-		if(!isset($_COOKIE[ADMIN_COOKIE_NAME])) {
+		if(!isset($_COOKIE[ADMIN_COOKIE_NAME]) || $_COOKIE[ADMIN_COOKIE_NAME] != ADMIN_PASSWORD) {
 			header("Location: ".site_url("/admin/login"));
 			exit();
 		}
@@ -19,7 +19,7 @@ class Admin extends CI_Controller {
 
 		if ($this->input->post('password') == ADMIN_PASSWORD)
 		{
-			setcookie(ADMIN_COOKIE_NAME, 'true', time() + (60 * 60 * 24 * 30), "/");
+			setcookie(ADMIN_COOKIE_NAME, ADMIN_PASSWORD, time() + (60 * 60 * 24 * 30), "/");
 
 			header("Location: ".site_url("/admin"));
 			exit();
