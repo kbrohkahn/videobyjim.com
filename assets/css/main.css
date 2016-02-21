@@ -2,7 +2,6 @@ html {background: #efefef;}
 body {background: url(/assets/img/checkerboard.png); overflow-x: hidden; }
 div, ul, li, a {box-sizing: border-box;}
 img {max-width: 100%;}
-.content {max-width: 1200px;}
 
 /* Various */
 .large-margin-top {margin-top: 75px;}
