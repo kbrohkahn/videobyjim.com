@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
 		var position = $(window).scrollTop();
-		$("#desktop-header").css("background", "rgba(233, 233, 233, " + position/top + ")");
+		$("#desktop-header").css("background", "rgba(31, 31, 31, " + position/top + ")");
 	});
 });
 

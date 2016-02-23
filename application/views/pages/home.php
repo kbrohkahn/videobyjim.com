@@ -4,8 +4,8 @@
 	</video>
 
 	<div class="video-controls">
-		<img src="/assets/img/icon_play.png" id="play-video">
-		<img src="/assets/img/icon_pause.png" id="pause-video">
+		<img src="/assets/img/icon_play_light.png" id="play-video">
+		<img src="/assets/img/icon_pause_light.png" id="pause-video">
 	</div>
 
 	<div id="slogan">Professional videos at your convenience.</div>
