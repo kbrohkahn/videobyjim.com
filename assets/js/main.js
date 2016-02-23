@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		$("html").addClass("mobile");
+	}
+
 	$("#mobile-menu-icon").click(function(e) {
 		e.preventDefault();
 		if ($("#main-navbar").css("left") == "0px") {
