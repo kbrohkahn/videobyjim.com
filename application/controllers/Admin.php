@@ -9,7 +9,7 @@ class Admin extends CI_Controller {
 
 	public function checkCookie() {
 		if(!isset($_COOKIE[ADMIN_COOKIE_NAME]) || $_COOKIE[ADMIN_COOKIE_NAME] != ADMIN_PASSWORD) {
-			header("Location: ".site_url("/admin/login"));
+			header('Location: '.site_url('/admin/login'));
 			exit();
 		}
 	}
@@ -19,9 +19,9 @@ class Admin extends CI_Controller {
 
 		if ($this->input->post('password') == ADMIN_PASSWORD)
 		{
-			setcookie(ADMIN_COOKIE_NAME, ADMIN_PASSWORD, time() + (60 * 60 * 24 * 30), "/");
+			setcookie(ADMIN_COOKIE_NAME, ADMIN_PASSWORD, time() + (60 * 60 * 24 * 30), '/');
 
-			header("Location: ".site_url("/admin"));
+			header('Location: '.site_url('/admin'));
 			exit();
 		}
 		else
@@ -66,7 +66,7 @@ class Admin extends CI_Controller {
 		else
 		{
 			$this->video_model->set_video();
-			header("Location: ".site_url("/admin"));
+			header('Location: '.site_url('/admin'));
 			exit();
 		}
 	}
@@ -77,7 +77,7 @@ class Admin extends CI_Controller {
 
 		$this->video_model->delete_video($slug);
 
-		header("Location: ".site_url("/admin"));
+		header('Location: '.site_url('/admin'));
 		exit();
 	}
 
@@ -106,7 +106,7 @@ class Admin extends CI_Controller {
 		{
 			$this->video_model->update_video($slug);
 			
-			header("Location: ".site_url("/admin"));
+			header('Location: '.site_url('/admin'));
 			exit();
 		}
 	}

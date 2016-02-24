@@ -11,7 +11,7 @@
 	</div>
 	<div class="form-group">
 		<label for="link">Link</label>
-		<input type="text" class="form-control" name="link" required placeholder="https://player.vimeo.com/video/9153533">
+		<input type="text" class="form-control" name="link" placeholder="https://player.vimeo.com/video/9153533">
 	</div>
 	<div class="form-group">
 		<label for="text">Summary</label>
