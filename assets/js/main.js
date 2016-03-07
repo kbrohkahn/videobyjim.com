@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		$("html").addClass("mobile");
+	}
+
 	$("#mobile-menu-icon").click(function(e) {
 		e.preventDefault();
 		if ($("#main-navbar").css("left") == "0px") {
@@ -20,7 +24,7 @@ $(document).ready(function() {
 
 	$(window).scroll(function() {
 		var position = $(window).scrollTop();
-		$("#desktop-header").css("background", "rgba(233, 233, 233, " + position/top + ")");
+		$("#desktop-header").css("background", "rgba(31, 31, 31, " + position/top + ")");
 	});
 });
 
