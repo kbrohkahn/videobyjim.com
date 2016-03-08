@@ -11,11 +11,18 @@
 	</div>
 	<div class="form-group">
 		<label for="link">Link</label>
-		<input type="text" class="form-control" name="link" placeholder="https://player.vimeo.com/video/9153533">
+		<input type="text" class="form-control" name="link" placeholder="https://vimeo.com/155863294">
 	</div>
 	<div class="form-group">
 		<label for="text">Summary</label>
 		<textarea type="text" class="form-control" name="text" required placeholder="Enter summary for video"></textarea>
+	</div>
+	<div class="form-group">
+		<label for="text">Price</label>
+		<div class="input-group">
+			<span class="input-group-addon">$</span>
+			<input type="number" class="form-control" name="text" placeholder="0.00"></textarea>
+		</div>
 	</div>
 
 	<button type="submit" name="submit" value="Create a video item" class="btn btn-primary">Submit</button>

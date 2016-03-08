@@ -1,39 +1,28 @@
-html {background: #1f1f1f;}
-body {background: url(/assets/img/checkerboard_dark.png); overflow-x: hidden; }
+html {background: url(/assets/img/checkerboard.png);}
+body {background-color: transparent; overflow-x: hidden; color: #012525; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;}
 div, ul, li, a {box-sizing: border-box;}
 img {max-width: 100%;}
 
 /* Various */
-.large-margin-top {margin-top: 75px;}
-.light-background {background: #edf0f8}
 .table>tbody>tr>td {vertical-align: middle;}
 nav ul {padding-left: 0;}
 
 /* Fonts and Text Colors */
-.title {font-family:'Courier New' serif; color: #efefef;}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {font-family:'Arial Black', Gadget, sans-serif; color: #efefef;}
-div,
-p,
-em,
-strong,
-#subtitle,
+h6 {font-family:'Arial Black', Gadget, sans-serif; color: #0e8a8a;}
 a,
 a:visited,
-a:link {font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
-a,
-a:visited,
-a:link,
-a h4 {font-weight: bold; color: #efefef;}
+a h4 {font-weight: bold; color: #e61717;}
 a:hover,
-a h4:hover {color: #efefef;}
+a h4:hover {color: #7b0404;}
 a.btn {font-weight: normal;}
 a.btn-danger,
-a.btn-primary {color: #fff;}
+a.btn-primary {color: #f96c9c;}
+
 
 /* Font Styles */
 h1 {margin: 100px 0 1em;}
@@ -52,25 +41,26 @@ p {line-height: 1.4em; margin-bottom: 1em}
 .full-width {width: 100%;}
 
 /* Header */
-a.title {font-family: Georgia, serif;  font-style: italic; }
+a.title {font-family: Georgia, serif;  font-style: italic; color: #7b0404;}
 a.title:hover {text-decoration: none}
+
+#desktop-header a:hover,
+#mobile-header a:hover,
+#main-navbar a:hover {text-decoration: none;}
 
 #desktop-header {margin: 0 -15px; position: fixed;z-index: 11; width: 100%; padding: 25px 15px;}
 #desktop-header .title {font-size: 32px;}
 
-#mobile-header .title,
-#mobile-header a,
-#mobile-header a:visited,
-#mobile-header a:hover {color: #efefef;}
-
-#mobile-header {display: none; width: 100%; background: #1f1f1f; position: fixed; top: 0; z-index: 12; color: #efefef; border-bottom: 1px solid #efefef; box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);}
+#mobile-header {display: none; width: 100%; background: #efefef; position: fixed; top: 0; z-index: 12; color: #1f1f1f; border-bottom: 1px solid #1f1f1f; box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);}
 #mobile-header .title {font-size: 24px; padding: 12px; display: table; vertical-align: middle;}
 #mobile-header i {padding: 15px; position: absolute;}
+#mobile-header a,
+#mobile-header a:visited {color: #7b0404;}
 
 #content-cover {position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: -1;}
 
 #main-navbar {margin: 25px 0; margin-bottom: 1em;position: fixed; right: 0; z-index: 12;}
-#main-navbar a {display: table-cell; padding: 15px; text-align: center}
+#main-navbar a {display: table-cell; padding: 15px; text-align: center; color: #7b0404;}
 
 /* Footer */
 #footer {width: 100%; text-align: center; margin: 0 auto; padding: 3em 0 1em; position: relative}
@@ -83,7 +73,7 @@ a.title:hover {text-decoration: none}
 form {max-width: 560px; margin: 0 auto;}
 
 /* Tables */
-table {background: #1f1f1f;}
+table {background: #efefef;}
 table td {margin: 5px;}
 table .btn {margin: 5px 0;}
 table tr th:first-child,
@@ -99,15 +89,15 @@ table tr td:last-child {padding-right: 5px;}
 .fullscreen-video-container .video-controls {position: absolute; bottom: 8px; left: 50%; margin-left: -43px; opacity: .75}
 .fullscreen-video-container .video-controls img {margin: 8px;}
 .fullscreen-video-container .video-controls img:hover {cursor: pointer;}
-.fullscreen-video-container #slogan {position: absolute; top: 50%; text-align: center; width: 100%; color: #efefef; font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-style: italic; background: rgba(31, 31, 31, .5); padding: 25px;}
+.fullscreen-video-container #slogan {position: absolute; top: 50%; text-align: center; width: 100%; color: #1f1f1f; font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-style: italic; background: rgba(137, 215, 215, .5); padding: 25px; color: #034a4a;}
 
 html.mobile .fullscreen-video-container #fullscreen-video {display: none;}
 
 /* Video packages */
-.package {text-align: center; background: #efefef; margin-bottom: 2em; padding: 15px;}
+.package {text-align: center; background: #1f1f1f; margin-bottom: 2em; padding: 15px;}
 .package,
 .package h4,
-.package h6 {color: #1f1f1f;}
+.package h6 {color: #efefef;}
 
 /* Media queries */
 @media screen and (min-width: 768px) {
@@ -119,8 +109,8 @@ html.mobile .fullscreen-video-container #fullscreen-video {display: none;}
 	#desktop-header {display: none;}
 	#mobile-header {display: block;}
 
-	#main-navbar {display: none; top: 58px; bottom: 0; left: -240px; width: 240px; margin: 0; background: #1f1f1f; border-top: solid 1px #efefef;}
-	#main-navbar a {display: block; border-bottom: solid 1px #efefef;}
+	#main-navbar {display: none; top: 58px; bottom: 0; left: -240px; width: 240px; margin: 0; background: #efefef; border-top: solid 1px #1f1f1f;}
+	#main-navbar a {display: block; border-bottom: solid 1px #1f1f1f;}
 
 	#content-cover {display: none;  background-color: rgba(32, 32, 32, .5); z-index: 10;}
 

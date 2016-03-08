@@ -26,7 +26,8 @@ class Video_model extends CI_Model {
 			'title' => $this->input->post('title'),
 			'slug' => $slug,
 			'link' => $this->input->post('link'),
-			'text' => $this->input->post('text')
+			'text' => $this->input->post('text'),
+			'price' => $this->input->post('price')
 		);
 
 		return $this->db->insert('videos', $data);
@@ -47,7 +48,8 @@ class Video_model extends CI_Model {
 			'title' => $this->input->post('title'),
 			'slug' => $new_slug,
 			'link' => $this->input->post('link'),
-			'text' => $this->input->post('text')
+			'text' => $this->input->post('text'),
+			'price' => $this->input->post('price')
 		);
 
 		return $this->db->update('videos', $data, array('slug' => $slug));

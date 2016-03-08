@@ -12,7 +12,8 @@ class Videos extends CI_Controller {
 		$data['videos'] = $this->video_model->get_videos();
 		$data['title'] = 'Video archive';
 
-		$this->load->view('templates/header', $data);
+		$header_data['title'] = 'Video Archive';
+		$this->load->view('templates/header', $header_data);
 		$this->load->view('videos/index', $data);
 		$this->load->view('templates/footer');
 	}
@@ -28,7 +29,8 @@ class Videos extends CI_Controller {
 
 		$data['title'] = $data['video_item']['title'];
 
-		$this->load->view('templates/header');
+		$header_data['title'] = $data['video_item']['title'];
+		$this->load->view('templates/header', $header_data);
 		$this->load->view('videos/view', $data);
 		$this->load->view('templates/footer');
 	}

@@ -26,7 +26,8 @@ class Admin extends CI_Controller {
 		}
 		else
 		{
-			$this->load->view('templates/header');
+			$header_data['title'] = 'Admin Login';
+			$this->load->view('templates/header', $header_data);
 			$this->load->view('admin/login');
 			$this->load->view('templates/footer');
 		}
@@ -39,7 +40,8 @@ class Admin extends CI_Controller {
 		$data['videos'] = $this->video_model->get_videos();
 		$data['title'] = 'Manage uploaded videos';
 
-		$this->load->view('templates/header', $data);
+		$header_data['title'] = 'Admin';
+		$this->load->view('templates/header', $header_data);
 		$this->load->view('admin/home', $data);
 		$this->load->view('templates/footer');
 	}
@@ -54,12 +56,12 @@ class Admin extends CI_Controller {
 		$data['title'] = 'Create a video item';
 
 		$this->form_validation->set_rules('title', 'Title', 'required');
-		$this->form_validation->set_rules('link', 'Link', 'required');
 		$this->form_validation->set_rules('text', 'Summary', 'required');
 
 		if ($this->form_validation->run() === FALSE)
 		{
-			$this->load->view('templates/header');
+			$header_data['title'] = 'Create Video';
+			$this->load->view('templates/header', $header_data);
 			$this->load->view('admin/create_video', $data);
 			$this->load->view('templates/footer');
 		}
@@ -93,12 +95,12 @@ class Admin extends CI_Controller {
 		$data['title'] = 'Edit video item';
 
 		$this->form_validation->set_rules('title', 'Title', 'required');
-		$this->form_validation->set_rules('link', 'Link', 'required');
 		$this->form_validation->set_rules('text', 'Text', 'required');
 
 		if ($this->form_validation->run() === FALSE)
 		{
-			$this->load->view('templates/header');
+			$header_data['title'] = 'Edit Video';
+			$this->load->view('templates/header', $header_data);
 			$this->load->view('admin/edit_video', $data);
 			$this->load->view('templates/footer');
 		}

@@ -2,10 +2,9 @@
 
 <?php foreach ($videos as $video_item): ?>
 
-	<h3><?php echo $video_item['title']; ?></h3>
+	<a href="<?php echo site_url('videos/'.$video_item['slug']); ?>"><h3><?php echo $video_item['title']; ?></h3></a>
 	<div class="main">
 		<?php echo $video_item['text']; ?>
 	</div>
-	<p><a href="<?php echo site_url('videos/'.$video_item['slug']); ?>">View video</a></p>
 
 <?php endforeach;?>
