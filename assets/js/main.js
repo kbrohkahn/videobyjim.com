@@ -3,19 +3,6 @@ $(document).ready(function() {
 		$("html").addClass("mobile");
 	}
 
-	$("#mobile-menu-icon").click(function(e) {
-		e.preventDefault();
-		if ($("#main-navbar").css("left") == "0px") {
-			closeNavbar();
-		} else {
-			openNavbar();
-		}
-	});
-
-	$("#content-cover").click(function() {
-		closeNavbar();
-	});
-
 	var slogan = document.getElementById("slogan")
 	var top = 1;
 	if (slogan != null) {
@@ -27,6 +14,14 @@ $(document).ready(function() {
 		$("#desktop-header").css("background", "rgba(246, 156, 156, " + position/top + ")");
 	});
 });
+
+function toggleNavbar() {
+	if ($("#main-navbar").css("left") == "0px") {
+		closeNavbar();
+	} else {
+		openNavbar();
+	}
+}
 
 function closeNavbar() {
 	$("#content-cover").hide();
@@ -43,4 +38,10 @@ function openNavbar() {
 	$("#main-navbar").animate({
 		left: "0px"
 	}, 500);
+}
+
+function openVimeoSearch() {
+	var searchKeyValue = $("#search-key").val();
+
+	window.location = "https://vimeo.com/videographybyjimalthoff/videos/search:"+searchKeyValue+"/sort:date";
 }

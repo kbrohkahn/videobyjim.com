@@ -93,6 +93,10 @@ table tr td:last-child {padding-right: 5px;}
 
 html.mobile .fullscreen-video-container #fullscreen-video {display: none;}
 
+/* Videos */
+.video-list {}
+.video-list .video-item { margin-bottom: 25px; }
+
 /* Video packages */
 .package {text-align: center; background: #1f1f1f; margin-bottom: 2em; padding: 15px;}
 .package,
