@@ -8,13 +8,17 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<meta http-equiv="Content-Language" content="en">
 	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
-	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/assets/css/main.css" rel="stylesheet">
-	<script src="/assets/js/jquery-2.1.4.min.js" type="text/javascript"></script>
-	<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="/assets/js/main.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="/assets/css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="/assets/css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="/assets/css/main.css">
 
+	<script type="text/javascript" src="/assets/js/jquery-2.1.4.min.js" ></script>
+	<script type="text/javascript" src="/assets/js/jquery-ui.min.js" ></script>
+	<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
 </head>
 <body>
 	<div class="content container-fluid">
@@ -34,10 +38,12 @@
 		</div>
 			
 		<nav id="main-navbar">
-			<a href='videos'>Videos</a>
-			<a href='about'>About</a>
-			<a href='contact'>Contact</a>
+			<a href='/videos.php'>Videos</a>
+			<a href='/about.php'>About</a>
+			<a href='/contact.php'>Contact</a>
 		</nav>
+
+		<div class="clearfix"></div>
 
 		<div id="content-cover" onclick="closeNavbar()"></div>
 

@@ -3,7 +3,7 @@
 <h1>Send Jim an email</h1>
 
 <div class="row">
-	<div class="col-xs-12">
+	<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 		<form name="contactform" method="post" action="/assets/php/send_form_email.php">
 			<div class="form-group">
 				<label for="first_name" class="control-label">First Name</label>
