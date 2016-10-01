@@ -1,6 +1,6 @@
 /*html {background: url(/assets/img/checkerboard.png);}*/
-html { background-color: #FFE6BB; }
-body { background: linear-gradient(to bottom, #B8D0F3, #FFE6BB); overflow-x: hidden; color: #012525; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;}
+html { background-color: #fff6e6; }
+body { background: linear-gradient(to bottom, #dbd1e8, #fff6e6); overflow-x: hidden; color: #012525; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;}
 div, ul, li, a {box-sizing: border-box;}
 img {max-width: 100%;}
 
@@ -14,16 +14,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {font-family:'Arial Black', Gadget, sans-serif; color: #A773E8;}
+h6 {font-family:'Arial Black', Gadget, sans-serif; color: #873EE2;}
 a,
-a:visited,
-a h4 {font-weight: bold; color: #74A2E6;}
-a:hover,
-a h4:hover {color: #3F80E0;}
+a:visited {font-weight: bold; color: #74A2E6;}
+a:hover {color: #3F80E0;}
 a.btn {font-weight: normal;}
-a.btn-danger,
-a.btn-primary {color: #f96c9c;}
-
 
 /* Font Styles */
 h1 {margin: 100px 0 1em;}
@@ -115,7 +110,7 @@ table tr td:last-child {padding-right: 5px;}
 .fullscreen-video-container .video-controls {position: absolute; bottom: 8px; left: 50%; margin-left: -43px; opacity: .75}
 .fullscreen-video-container .video-controls img {margin: 8px;}
 .fullscreen-video-container .video-controls img:hover {cursor: pointer;}
-.fullscreen-video-container #slogan {position: absolute; top: 50%; text-align: center; width: 100%; color: #A773E8; font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-style: italic; background-color: rgba(255,203,115, .75); padding: 25px; }
+.fullscreen-video-container #slogan {position: absolute; top: 50%; text-align: center; width: 100%; color: #873EE2; font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-style: italic; background-color: rgba(255,203,115, .75); padding: 25px; }
 
 html.mobile .fullscreen-video-container #fullscreen-video {display: none;}
 
